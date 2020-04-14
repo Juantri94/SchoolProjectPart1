@@ -1,0 +1,13 @@
+platform :ios, '12.0'
+use_frameworks!
+
+target 'SchoolProject' do
+
+  pod 'StudentFramework', :path => '../StudentFramework'
+
+  target 'SchoolProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
